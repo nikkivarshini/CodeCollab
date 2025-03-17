@@ -257,5 +257,5 @@ app.use((req, res, next) => {
   res.sendFile(path.join(__dirname, '../client/build', 'index.html'))
 });
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT ;
 server.listen(PORT, () => console.log(`Listening on port ${PORT}`));
