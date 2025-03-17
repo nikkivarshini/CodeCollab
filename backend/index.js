@@ -16,6 +16,11 @@ const { env } = require("process");
 app.use(express.json());
 app.use(cors());
 
+app.get("/", (req, res) => {
+  res.send("Hello, world!");
+});
+
+
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
 
